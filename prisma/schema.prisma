@@ -8,18 +8,18 @@ datasource db {
 }
 
 model Psicologos {
-  id       Int    @id @default(autoincrement())
+  id       Int     @id @default(autoincrement())
+  active   Boolean @default(true)
   nome     String
-  telefone String
-  cpf      String
   email    String
-  crp      String
+  telefone String
+  crp      String?
 }
 
-model Pacientes {
-  id              Int      @id @default(autoincrement())
-  nome            String
-  cpf             String
-  email           String
-  data_nascimento DateTime
-}
+// model Pacientes {
+//   id              Int      @id @default(autoincrement())
+//   nome            String
+//   cpf             String
+//   email           String
+//   data_nascimento DateTime
+// }

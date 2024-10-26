@@ -18,11 +18,6 @@ export class createPsicologoDto {
   @IsNotEmpty()
   @IsEmail()
   email: string;
-  @IsString()
-  @IsNotEmpty()
-  @MinLength(11)
-  @MaxLength(11)
-  cpf: string;
   @IsNotEmpty()
   @MinLength(7)
   @MaxLength(7)
